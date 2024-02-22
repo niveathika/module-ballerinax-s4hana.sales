@@ -169,6 +169,7 @@
     "paths": {
         "/A_SalesOrder": {
             "get": {
+                "operationId": "listA_SalesOrder",
                 "summary": "Reads all sales order headers.",
                 "description": "Reads the header data of all sales orders in the system.",
                 "tags": [
@@ -231,6 +232,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SalesOrder",
                 "summary": "Creates a sales order.",
                 "description": "Creates a sales order header. Consumers can create a sales order with all possible sub-entities (for example, header partners or items) using deep insert requests or create a single sales order header.",
                 "tags": [
@@ -278,6 +280,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderByKey",
                 "summary": "Reads the header of a sales order.",
                 "description": "Reads the header data of a specific sales order. Consumers must pass the sales order ID (key field).",
                 "tags": [
@@ -308,6 +311,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrder",
                 "summary": "Updates a sales order.",
                 "description": "Updates the header data of a specific sales order. Consumers must pass the sales order ID (key field).",
                 "tags": [
@@ -334,6 +338,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SalesOrder",
                 "summary": "Deletes a sales order.",
                 "description": "Deletes the header data of a specific sales order. Consumers must pass the sales order ID (key field).",
                 "tags": [
@@ -363,6 +368,7 @@
                 }
             ],
             "get": {
+                "operationId": "getBillingPlanOfA_SalesOrder",
                 "summary": "Reads the billing plan of a sales order.",
                 "description": "Reads the billing plan data for a specific sales order. Consumers must pass the following key field: sales order ID.",
                 "tags": [
@@ -408,6 +414,7 @@
                 }
             ],
             "get": {
+                "operationId": "getItemOfA_SalesOrder",
                 "summary": "Reads all items of a sales order.",
                 "description": "Reads all item data of a specific sales order. Consumers must pass the sales order ID (key field).",
                 "tags": [
@@ -471,6 +478,7 @@
                 }
             },
             "post": {
+                "operationId": "createItemOfA_SalesOrder",
                 "summary": "Creates a sales order item for a sales order.",
                 "description": "Creates a sales order item for a specific sales order. Consumers can create an item with all possible sub-entities (for example, item partners or item texts) using deep insert requests or create a single item. Consumers must pass the sales order ID.",
                 "tags": [
@@ -519,6 +527,7 @@
                 }
             ],
             "get": {
+                "operationId": "getPartnerOfA_SalesOrder",
                 "summary": "Reads the header partners of a sales order.",
                 "description": "Reads the partner data from the header of a specific sales order. Consumers must pass the sales order ID (key field). The data is relevant for all items for which no item-specific partners are maintained.",
                 "tags": [
@@ -582,6 +591,7 @@
                 }
             },
             "post": {
+                "operationId": "createPartnerOfA_SalesOrder",
                 "summary": "Creates a header partner for a sales order.",
                 "description": "Creates the partner data for a specific sales order header. Consumers must pass the sales order ID (key field). The data is relevant for all items for which no item-specific partners are maintained.",
                 "tags": [
@@ -630,6 +640,7 @@
                 }
             ],
             "get": {
+                "operationId": "getPaymentPlanItemDetailsOfA_SalesOrder",
                 "summary": "Reads the header payment plan of a specific sales order.",
                 "description": "Reads the payment plan data from the header of a specific sales order. Consumers must pass the sales order ID (key field).",
                 "tags": [
@@ -693,6 +704,7 @@
                 }
             },
             "post": {
+                "operationId": "createPaymentPlanItemDetailsOfA_SalesOrder",
                 "summary": "Creates a header payment plan for a specific sales order.",
                 "description": "Creates the payment plan data for a specific sales order header. Consumers must pass the sales order ID (key field).",
                 "tags": [
@@ -741,6 +753,7 @@
                 }
             ],
             "get": {
+                "operationId": "getPrecedingProcFlowDocOfA_SalesOrder",
                 "summary": "Get entities from related to_PrecedingProcFlowDoc",
                 "tags": [
                     "Sales Order Header",
@@ -817,6 +830,7 @@
                 }
             ],
             "get": {
+                "operationId": "getPricingElementOfA_SalesOrder",
                 "summary": "Reads the pricing element of a sales order.",
                 "description": "Reads the pricing element data from the header of a specific sales order. Consumers must pass the sales order ID (key field).",
                 "tags": [
@@ -880,6 +894,7 @@
                 }
             },
             "post": {
+                "operationId": "createPricingElementOfA_SalesOrder",
                 "summary": "Creates a header pricing element for a specific sales order.",
                 "description": "Creates the pricing element data for a specific sales order header. Consumers must pass the sales order ID (key field).",
                 "tags": [
@@ -928,6 +943,7 @@
                 }
             ],
             "get": {
+                "operationId": "getRelatedObjectOfA_SalesOrder",
                 "summary": "Reads the related objects of a sales order header.",
                 "description": "Reads the data for related objects from the header of a specific sales order. Consumers must pass the sales order ID (key field).",
                 "tags": [
@@ -991,6 +1007,7 @@
                 }
             },
             "post": {
+                "operationId": "createRelatedObjectOfA_SalesOrder",
                 "summary": "Creates a related object for a sales order header.",
                 "description": "Creates the data for a related object for the header of a specific sales order. Consumers must pass the sales order ID (key field), the related object type, and the related object reference 1.",
                 "tags": [
@@ -1039,6 +1056,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSubsequentProcFlowDocOfA_SalesOrder",
                 "summary": "Get entities from related to_SubsequentProcFlowDoc",
                 "tags": [
                     "Sales Order Header",
@@ -1115,6 +1133,7 @@
                 }
             ],
             "get": {
+                "operationId": "getTextOfA_SalesOrder",
                 "summary": "Reads the header texts of a sales order.",
                 "description": "Reads the text data from the header of a specific sales order. Consumers must pass the sales order ID (key field).",
                 "tags": [
@@ -1178,6 +1197,7 @@
                 }
             },
             "post": {
+                "operationId": "createTextOfA_SalesOrder",
                 "summary": "Creates a header text for a sales order.",
                 "description": "Creates the text data for a specific sales order header. Consumers must pass the sales order ID (key field).",
                 "tags": [
@@ -1214,6 +1234,7 @@
         },
         "/A_SalesOrderBillingPlan": {
             "get": {
+                "operationId": "listA_SalesOrderBillingPlan",
                 "summary": "Reads the billing plans of all sales orders.",
                 "description": "Reads the billing plan data from the headers of all sales orders in the system.",
                 "tags": [
@@ -1300,6 +1321,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderBillingPlanByKey",
                 "summary": "Reads the billing plan of a sales order.",
                 "description": "Reads the billing plan data from the header of a specific sales order. Consumers must pass the following key fields: sales order ID and number of the billing plan.",
                 "tags": [
@@ -1330,6 +1352,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrderBillingPlan",
                 "summary": "Updates the billing plan of a sales order.",
                 "description": "Updates the billing plan data for the header of a specific sales order. Consumers must pass the following key fields: sales order ID and number of the billing plan.",
                 "tags": [
@@ -1380,6 +1403,7 @@
                 }
             ],
             "get": {
+                "operationId": "getBillingPlanItemOfA_SalesOrderBillingPlan",
                 "summary": "Reads the billing plan items of a sales order billing plan.",
                 "description": "Reads the billing plan item data for a specific sales order billing plan. Consumers must pass the following key fields: sales order ID and number of the header billing plan.",
                 "tags": [
@@ -1443,6 +1467,7 @@
                 }
             },
             "post": {
+                "operationId": "createBillingPlanItemOfA_SalesOrderBillingPlan",
                 "summary": "Creates a billing plan item for a sales order billing plan.",
                 "description": "Creates a billing plan item for a specific sales order billing plan. Consumers must pass the following key fields: sales order ID and number of the header billing plan.",
                 "tags": [
@@ -1501,6 +1526,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderBillingPlan",
                 "summary": "Reads the sales order header for a billing plan.",
                 "description": "Reads the sales order header data for a specific header billing plan. Consumers must pass the following key fields: sales order ID and number of the header billing plan.",
                 "tags": [
@@ -1534,6 +1560,7 @@
         },
         "/A_SalesOrderBillingPlanItem": {
             "get": {
+                "operationId": "listA_SalesOrderBillingPlanItem",
                 "summary": "Reads the billing plan items of all sales orders.",
                 "description": "Reads the billing plan item data from the headers of all sales orders in the system.",
                 "tags": [
@@ -1596,6 +1623,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SalesOrderBillingPlanItem",
                 "summary": "Creates a billing plan item of a sales order.",
                 "description": "Creates a specific billing plan item for a specific sales order. Consumers must pass the following key fields: sales order ID, number of the header billing plan, and item number of the header billing plan.",
                 "tags": [
@@ -1663,6 +1691,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderBillingPlanItemByKey",
                 "summary": "Reads a billing plan item of a sales order.",
                 "description": "Reads a specific billing plan item for a specific sales order. Consumers must pass the following key fields: sales order ID, number of the header billing plan, and item number of the header billing plan.",
                 "tags": [
@@ -1693,6 +1722,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrderBillingPlanItem",
                 "summary": "Updates a billing plan item of a sales order.",
                 "description": "Updates a specific billing plan item for a specific sales order. Consumers must pass the following key fields: sales order ID, number of the header billing plan, and item number of the header billing plan.",
                 "tags": [
@@ -1719,6 +1749,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SalesOrderBillingPlanItem",
                 "summary": "Deletes a billing plan item of a sales order.",
                 "description": "Deletes a specific billing plan item for a specific sales order. Consumers must pass the following key fields: sales order ID, number of the header billing plan, and item number of the header billing plan.",
                 "tags": [
@@ -1768,6 +1799,7 @@
                 }
             ],
             "get": {
+                "operationId": "getBillingPlanOfA_SalesOrderBillingPlanItem",
                 "summary": "Reads the billing plan of a billing plan item of a sales order header.",
                 "description": "Reads the billing plan data for a specific billing plan item of a specific sales order header. Consumers must pass the following key fields: sales order ID, number of the header billing plan, and item number of the header billing plan.",
                 "tags": [
@@ -1833,6 +1865,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderBillingPlanItem",
                 "summary": "Reads the sales order header for a billing plan item of a sales order.",
                 "description": "Reads the sales order header data for a specific billing plan item of a specific sales order. Consumers must pass the following key fields: sales order ID, number of the header billing plan, and item number of the header billing plan.",
                 "tags": [
@@ -1866,6 +1899,7 @@
         },
         "/A_SalesOrderHeaderPartner": {
             "get": {
+                "operationId": "listA_SalesOrderHeaderPartner",
                 "summary": "Reads the header partners of all sales orders.",
                 "description": "Reads the partner data from the headers of all sales orders in the system. The data is relevant for all items for which no item-specific partners are maintained.",
                 "tags": [
@@ -1928,6 +1962,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SalesOrderHeaderPartner",
                 "summary": "Creates a header partner for a specific sales order with a specific partner function.",
                 "description": "Creates the data of a partner with a specific partner function for the header of a specific sales order. Consumers must pass the following key fields: sales order ID and partner function.",
                 "tags": [
@@ -1985,6 +2020,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderHeaderPartnerByKey",
                 "summary": "Reads the header partners of a sales order and a partner function.",
                 "description": "Reads the data of partners with a specific partner function from the header of a specific sales order. Consumers must pass the following key fields: sales order ID and partner function.",
                 "tags": [
@@ -2015,6 +2051,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrderHeaderPartner",
                 "summary": "Updates a header partner for a specific sales order with a specific partner function.",
                 "description": "Updates the data of a partner with a specific partner function from the header of a specific sales order. Consumers must pass the following key fields: sales order ID and partner function.",
                 "tags": [
@@ -2041,6 +2078,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SalesOrderHeaderPartner",
                 "summary": "Deletes a header partner of a specific sales order with a specific partner function.",
                 "description": "Delete the data of a partner with a specific partner function from the header of a specific sales order. Consumers must pass the following key fields: sales order ID and partner function.",
                 "tags": [
@@ -2080,6 +2118,7 @@
                 }
             ],
             "get": {
+                "operationId": "getAddressOfA_SalesOrderHeaderPartner",
                 "summary": "Reads the address of a sales order header partner.",
                 "description": "Reads the header address data for a specific sales order header partner. Consumers must pass the following key fields: sales order ID and partner function.",
                 "tags": [
@@ -2167,6 +2206,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderHeaderPartner",
                 "summary": "Reads the sales order header for a header partner.",
                 "description": "Reads the sales order header data for a specific header partner function. Consumers must pass the following key fields: partner function and the sales order ID.",
                 "tags": [
@@ -2200,6 +2240,7 @@
         },
         "/A_SalesOrderHeaderPrElement": {
             "get": {
+                "operationId": "listA_SalesOrderHeaderPrElement",
                 "summary": "Reads the header pricing elements of all sales orders.",
                 "description": "Reads the pricing element data from the headers of all sales orders in the system.",
                 "tags": [
@@ -2262,6 +2303,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SalesOrderHeaderPrElement",
                 "summary": "Creates a header pricing element for a sales order.",
                 "description": "Creates the pricing element data for the header of a specific sales order. Consumers must pass the following key fields: sales order ID, pricing procedure step, and pricing procedure counter.",
                 "tags": [
@@ -2329,6 +2371,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderHeaderPrElementByKey",
                 "summary": "Reads the header pricing element for a sales order.",
                 "description": "Reads the pricing element data from the header of a specific sales order. Consumers must pass the following key fields: sales order ID, pricing procedure step, and pricing procedure counter.",
                 "tags": [
@@ -2359,6 +2402,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrderHeaderPrElement",
                 "summary": "Updates a header pricing element for a sales order.",
                 "description": "Updates the pricing element data from the header of a specific sales order. Consumers must pass the following key fields: sales order ID, pricing procedure step, and pricing procedure counter.",
                 "tags": [
@@ -2385,6 +2429,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SalesOrderHeaderPrElement",
                 "summary": "Deletes a header pricing element for a sales order.",
                 "description": "Deletes the pricing element data from the header of a specific sales order. Consumers must pass the following key fields: sales order ID, pricing procedure step, and pricing procedure counter.",
                 "tags": [
@@ -2434,6 +2479,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderHeaderPrElement",
                 "summary": "Reads the sales order header for a pricing element.",
                 "description": "Reads the sales order header data for a specific pricing element. Consumers must pass the following key fields: sales order ID, pricing procedure step, and pricing procedure counter.",
                 "tags": [
@@ -2467,6 +2513,7 @@
         },
         "/A_SalesOrderItem": {
             "get": {
+                "operationId": "listA_SalesOrderItem",
                 "summary": "Reads all sales order items.",
                 "description": "Reads the item data of all sales orders in the system.",
                 "tags": [
@@ -2529,6 +2576,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SalesOrderItem",
                 "summary": "Creates a sales order item.",
                 "description": "Creates a sales order item. Consumers must pass the sales order ID (key field).",
                 "tags": [
@@ -2586,6 +2634,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderItemByKey",
                 "summary": "Reads a sales order item.",
                 "description": "Reads the data of a specific sales order item. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -2616,6 +2665,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrderItem",
                 "summary": "Updates a sales order item.",
                 "description": "Updates the data of a specific sales order item. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -2642,6 +2692,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SalesOrderItem",
                 "summary": "Deletes a sales order item.",
                 "description": "Deletes the data of a specific sales order item. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -2681,6 +2732,7 @@
                 }
             ],
             "get": {
+                "operationId": "getBillingPlanOfA_SalesOrderItem",
                 "summary": "Reads the billing plan of a sales order item.",
                 "description": "Reads the billing plan data for a specific sales order item. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -2736,6 +2788,7 @@
                 }
             ],
             "get": {
+                "operationId": "getPartnerOfA_SalesOrderItem",
                 "summary": "Reads the item partners of a specific sales order item.",
                 "description": "Reads the partner data for a specific item of a specific sales order. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -2799,6 +2852,7 @@
                 }
             },
             "post": {
+                "operationId": "createPartnerOfA_SalesOrderItem",
                 "summary": "Creates an item partner for a specific sales order item.",
                 "description": "Creates the partner data for a specific item of a specific sales order. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -2857,6 +2911,7 @@
                 }
             ],
             "get": {
+                "operationId": "getPrecedingProcFlowDocItemOfA_SalesOrderItem",
                 "summary": "Get entities from related to_PrecedingProcFlowDocItem",
                 "tags": [
                     "Sales Order Item",
@@ -2943,6 +2998,7 @@
                 }
             ],
             "get": {
+                "operationId": "getPricingElementOfA_SalesOrderItem",
                 "summary": "Reads the pricing element of a sales order item.",
                 "description": "Reads the pricing element data for a specific item of a specific sales order. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -3006,6 +3062,7 @@
                 }
             },
             "post": {
+                "operationId": "createPricingElementOfA_SalesOrderItem",
                 "summary": "Creates a pricing element for a specific sales order item.",
                 "description": "Creates the pricing element data for a specific item of a specific sales order. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -3064,6 +3121,7 @@
                 }
             ],
             "get": {
+                "operationId": "getRelatedObjectOfA_SalesOrderItem",
                 "summary": "Reads the related object of a sales order item.",
                 "description": "Reads the data of a related object for a specific item. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -3127,6 +3185,7 @@
                 }
             },
             "post": {
+                "operationId": "createRelatedObjectOfA_SalesOrderItem",
                 "summary": "Creates a related object for a specific sales order item.",
                 "description": "Creates the data of a related object for a specific item. Consumers must pass the following key fields: sales order ID, item number, related object type, and related object reference 1.",
                 "tags": [
@@ -3185,6 +3244,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderItem",
                 "summary": "Reads the sales order header of a sales order item.",
                 "description": "Reads the sales order header data for a specific item. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -3240,6 +3300,7 @@
                 }
             ],
             "get": {
+                "operationId": "getScheduleLineOfA_SalesOrderItem",
                 "summary": "Reads the schedule lines of a sales order item.",
                 "description": "Reads the schedule line data for a specific item. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -3300,6 +3361,7 @@
                 }
             },
             "post": {
+                "operationId": "createScheduleLineOfA_SalesOrderItem",
                 "summary": "Creates schedule lines for a sales order item.",
                 "description": "Creates the schedule line data for a specific item. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -3358,6 +3420,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSubsequentProcFlowDocItemOfA_SalesOrderItem",
                 "summary": "Get entities from related to_SubsequentProcFlowDocItem",
                 "tags": [
                     "Sales Order Item",
@@ -3444,6 +3507,7 @@
                 }
             ],
             "get": {
+                "operationId": "getTextOfA_SalesOrderItem",
                 "summary": "Reads the text of a sales order item.",
                 "description": "Reads the text data for a specific item. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -3507,6 +3571,7 @@
                 }
             },
             "post": {
+                "operationId": "createTextOfA_SalesOrderItem",
                 "summary": "Creates a text for a specific sales order item.",
                 "description": "Creates the text data for a specific item. Consumers must pass the following key fields: sales order ID and item number.",
                 "tags": [
@@ -3543,6 +3608,7 @@
         },
         "/A_SalesOrderItemBillingPlan": {
             "get": {
+                "operationId": "listA_SalesOrderItemBillingPlan",
                 "summary": "Reads the billing plans of all sales order items.",
                 "description": "Reads the billing plan data from the items of all sales orders in the system.",
                 "tags": [
@@ -3639,6 +3705,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderItemBillingPlanByKey",
                 "summary": "Reads the billing plan of a sales order item.",
                 "description": "Reads the billing plan of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, and number of the item billing plan.",
                 "tags": [
@@ -3669,6 +3736,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrderItemBillingPlan",
                 "summary": "Updates the billing plan of a sales order item.",
                 "description": "Updates the billing plan of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, and number of the item billing plan.",
                 "tags": [
@@ -3729,6 +3797,7 @@
                 }
             ],
             "get": {
+                "operationId": "getBillingPlanItemOfA_SalesOrderItemBillingPlan",
                 "summary": "Reads the billing plan items of a sales order item billing plan.",
                 "description": "Reads the billing plan item data for a specific sales order item billing plan. Consumers must pass the following key fields: sales order ID, item number, and number of the item billing plan.",
                 "tags": [
@@ -3792,6 +3861,7 @@
                 }
             },
             "post": {
+                "operationId": "createBillingPlanItemOfA_SalesOrderItemBillingPlan",
                 "summary": "Creates a billing plan item for a sales order item billing plan.",
                 "description": "Creates a billing plan item for a specific sales order item billing plan. Consumers must pass the following key fields: sales order ID, item number, and number of the item billing plan.",
                 "tags": [
@@ -3860,6 +3930,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderItemBillingPlan",
                 "summary": "Reads the sales order header for an item billing plan.",
                 "description": "Reads the sales order header data for a specific item billing plan. Consumers must pass the following key fields: sales order ID, item number, and number of the item billing plan.",
                 "tags": [
@@ -3925,6 +3996,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderItemOfA_SalesOrderItemBillingPlan",
                 "summary": "Reads the sales order item for an item billing plan.",
                 "description": "Reads the sales order item data for a specific item billing plan. Consumers must pass the following key fields: sales order ID, item number, and number of the item billing plan.",
                 "tags": [
@@ -3958,6 +4030,7 @@
         },
         "/A_SalesOrderItemPartner": {
             "get": {
+                "operationId": "listA_SalesOrderItemPartner",
                 "summary": "Reads the item partners for all sales orders.",
                 "description": "Reads the partner data from the items of all sales orders in the system.",
                 "tags": [
@@ -4020,6 +4093,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SalesOrderItemPartner",
                 "summary": "Creates a partner for a sales order item with a specific partner function.",
                 "description": "Creates an item partner with a specific partner function for a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, and partner function.",
                 "tags": [
@@ -4087,6 +4161,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderItemPartnerByKey",
                 "summary": "Reads an item partner of an item with a specific partner function in a specific sales order.",
                 "description": "Reads an item partner with a specific partner function of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, and partner function.",
                 "tags": [
@@ -4117,6 +4192,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrderItemPartner",
                 "summary": "Updates a partner of a sales order item with a specific partner function.",
                 "description": "Updates an item partner with a specific partner function of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, and partner function.",
                 "tags": [
@@ -4143,6 +4219,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SalesOrderItemPartner",
                 "summary": "Deletes a partner of a specific sales order item with a specific partner function.",
                 "description": "Deletes an item partner with a specific partner function of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, and partner function.",
                 "tags": [
@@ -4192,6 +4269,7 @@
                 }
             ],
             "get": {
+                "operationId": "getAddressOfA_SalesOrderItemPartner",
                 "summary": "Reads the item address of a sales order item partner.",
                 "description": "Reads the item address data for a specific sales order item partner. Consumers must pass the following key fields: sales order ID, item number, and partner function.",
                 "tags": [
@@ -4289,6 +4367,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderItemPartner",
                 "summary": "Reads the sales order header of a partner function of a sales order item.",
                 "description": "Reads the sales order header data for a specific item partner function. Consumers must pass the following key fields: sales order ID, item number, and partner function.",
                 "tags": [
@@ -4354,6 +4433,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderItemOfA_SalesOrderItemPartner",
                 "summary": "Reads the sales order item for a partner function of a sales order item.",
                 "description": "Reads the sales order item data for a specific item partner function. Consumers must pass the following key fields: sales order ID, item number, and partner function.",
                 "tags": [
@@ -4387,6 +4467,7 @@
         },
         "/A_SalesOrderItemPartnerAddress": {
             "get": {
+                "operationId": "listA_SalesOrderItemPartnerAddress",
                 "summary": "Reads all addresses for item partners of sales orders.",
                 "description": "Reads the address data of all item partners of sales orders in the system.",
                 "tags": [
@@ -4493,6 +4574,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderItemPartnerAddressByKey",
                 "summary": "Reads the address of an item partner of a sales order.",
                 "description": "Reads the item address data of a specific item partner of a sales order. Consumers must pass the following key fields: sales order ID, item number, partner function, and the address representation code.",
                 "tags": [
@@ -4523,6 +4605,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrderItemPartnerAddress",
                 "summary": "Updates the address of an item partner of a sales order.",
                 "description": "Updates the item address data of a specific item partner of a sales order. Consumers must pass the following key fields: sales order ID, item number, partner function, and the address representation code.",
                 "tags": [
@@ -4593,6 +4676,7 @@
                 }
             ],
             "get": {
+                "operationId": "getPartnerOfA_SalesOrderItemPartnerAddress",
                 "summary": "Reads the sales order item partner for an item partner address.",
                 "description": "Reads the sales order item partner data for a specific item partner address. Consumers must pass the following key fields: sales order ID, item number, partner function, and the address representation code.",
                 "tags": [
@@ -4668,6 +4752,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderItemPartnerAddress",
                 "summary": "Get related to_SalesOrder",
                 "tags": [
                     "Item Partner Address",
@@ -4742,6 +4827,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderItemOfA_SalesOrderItemPartnerAddress",
                 "summary": "Reads the sales order item for an item partner address.",
                 "description": "Reads the sales order item data for a specific item partner address. Consumers must pass the following key fields: sales order ID, item number, and the address representation code.",
                 "tags": [
@@ -4775,6 +4861,7 @@
         },
         "/A_SalesOrderItemPrElement": {
             "get": {
+                "operationId": "listA_SalesOrderItemPrElement",
                 "summary": "Reads the item pricing elements of all sales orders.",
                 "description": "Reads the pricing element data from the items of all sales orders in the system.",
                 "tags": [
@@ -4837,6 +4924,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SalesOrderItemPrElement",
                 "summary": "Creates an item pricing element.",
                 "description": "Creates a pricing element for a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, pricing procedure step, and pricing procedure counter.",
                 "tags": [
@@ -4914,6 +5002,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderItemPrElementByKey",
                 "summary": "Reads the pricing element of a item with specific pricing details.",
                 "description": "Reads a specific item pricing element of a specific sales order. Consumers must pass the following key fields: sales order ID, item number, pricing procedure step, and pricing procedure counter.",
                 "tags": [
@@ -4944,6 +5033,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrderItemPrElement",
                 "summary": "Updates an item pricing element.",
                 "description": "Updates a pricing element of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, pricing procedure step, and pricing procedure counter.",
                 "tags": [
@@ -4970,6 +5060,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SalesOrderItemPrElement",
                 "summary": "Deletes an item pricing element.",
                 "description": "Deletes a pricing element of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, pricing procedure step, and pricing procedure counter.",
                 "tags": [
@@ -5029,6 +5120,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderItemPrElement",
                 "summary": "Reads the sales order header for a pricing element.",
                 "description": "Reads the sales order header data for a specific pricing element of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, pricing procedure step, and pricing procedure counter.",
                 "tags": [
@@ -5104,6 +5196,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderItemOfA_SalesOrderItemPrElement",
                 "summary": "Reads the sales order item for a pricing element.",
                 "description": "Reads the sales order item data for a specific pricing element of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, pricing procedure step, and pricing procedure counter.",
                 "tags": [
@@ -5137,6 +5230,7 @@
         },
         "/A_SalesOrderItemRelatedObject": {
             "get": {
+                "operationId": "listA_SalesOrderItemRelatedObject",
                 "summary": "Reads related objects from the items of all sales orders.",
                 "description": "Reads the data for related objects from the items of all sales orders in the system.",
                 "tags": [
@@ -5199,6 +5293,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SalesOrderItemRelatedObject",
                 "summary": "Creates a related object for a sales order item.",
                 "description": "Creates the data for a related object for a specific item of a specific sales order. Consumers must pass the following key fields: sales order ID, sales order item number, related object type, and related object reference 1.",
                 "tags": [
@@ -5266,6 +5361,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderItemRelatedObjectByKey",
                 "summary": "Reads a related object from a sales order item.",
                 "description": "Reads the data for a related object from a specific item of a specific sales order. Consumers must pass the following key fields: sales order ID, sales order item number, and sequence number of the related object.",
                 "tags": [
@@ -5296,6 +5392,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SalesOrderItemRelatedObject",
                 "summary": "Deletes a related object from a sales order item.",
                 "description": "Deletes the data for a related object from a specific item of a specific sales order. Consumers must pass the following key fields: sales order ID, sales order item number, and sequence number of the related object.",
                 "tags": [
@@ -5345,6 +5442,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderItemRelatedObject",
                 "summary": "Reads the sales order header for a related object of a sales order item.",
                 "description": "Reads the sales order header data for a specific related object of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, and sequence number.",
                 "tags": [
@@ -5410,6 +5508,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderItemOfA_SalesOrderItemRelatedObject",
                 "summary": "Reads the sales order item for a related object.",
                 "description": "Reads the sales order item data for a specific related object. Consumers must pass the following key fields: sales order ID, item number, and sequence number.",
                 "tags": [
@@ -5443,6 +5542,7 @@
         },
         "/A_SalesOrderItemText": {
             "get": {
+                "operationId": "listA_SalesOrderItemText",
                 "summary": "Reads item texts of all sales orders.",
                 "description": "Reads the text data from the items of all sales orders in the system.",
                 "tags": [
@@ -5505,6 +5605,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SalesOrderItemText",
                 "summary": "Creates an item text.",
                 "description": "Creates a specific item text in a specific language. Consumers must pass the following key fields: sales order ID, item number, language, and text ID.",
                 "tags": [
@@ -5582,6 +5683,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderItemTextByKey",
                 "summary": "Reads an item text.",
                 "description": "Reads a specific item text in a specific language. Consumers must pass the following key fields: sales order ID, item number, language, and text ID.",
                 "tags": [
@@ -5612,6 +5714,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrderItemText",
                 "summary": "Updates an item text.",
                 "description": "Updates a specific item text in a specific language. Consumers must pass the following key fields: sales order ID, sales order item number, language, and text ID.",
                 "tags": [
@@ -5638,6 +5741,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SalesOrderItemText",
                 "summary": "Deletes an item text.",
                 "description": "Deletes a specific item text in a specific language. Consumers must pass the following key fields: sales order ID, item number, language, and text ID.",
                 "tags": [
@@ -5697,6 +5801,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderItemText",
                 "summary": "Reads the sales order header for a text of a sales order item.",
                 "description": "Reads the sales order header data for a specific text of a specific sales order item in a specific language. Consumers must pass the following key fields: sales order ID, item number, language, and text ID.",
                 "tags": [
@@ -5772,6 +5877,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderItemOfA_SalesOrderItemText",
                 "summary": "Reads the sales order item for an item text.",
                 "description": "Reads the sales order item data for a specific text in a specific language. Consumers must pass the following key fields: sales order ID, item number, language, and text ID.",
                 "tags": [
@@ -5805,6 +5911,7 @@
         },
         "/A_SalesOrderItmPrecdgProcFlow": {
             "get": {
+                "operationId": "listA_SalesOrderItmPrecdgProcFlow",
                 "summary": "Reads the preceding items of all sales orders items.",
                 "description": "Reads the process flow data for all sales order items and their preceding items in the system.",
                 "tags": [
@@ -5902,6 +6009,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderItmPrecdgProcFlowByKey",
                 "summary": "Reads a preceding item for a sales order item.",
                 "description": "Reads the process flow data of a specific preceding item of a specific sales order item. Consumers must pass the following key fields: sales order ID, sales order item ID, and document relationship UUID.",
                 "tags": [
@@ -5967,6 +6075,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderItmPrecdgProcFlow",
                 "summary": "Reads the sales order header data of a preceding item of a sales order.",
                 "description": "Reads the sales order header data for specific preceding item of a sales order item. Consumers must pass the following key fields: sales order ID, sales order item number, and document relationship UUID.",
                 "tags": [
@@ -6033,6 +6142,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderItemOfA_SalesOrderItmPrecdgProcFlow",
                 "summary": "Reads the sales order item data for a preceding item of a sales order.",
                 "description": "Reads the sales order item data for a specific preceding item of a sales order item. Consumers must pass the following key fields: sales order ID, sales order item number, and document relationship UUID.",
                 "tags": [
@@ -6066,6 +6176,7 @@
         },
         "/A_SalesOrderItmSubsqntProcFlow": {
             "get": {
+                "operationId": "listA_SalesOrderItmSubsqntProcFlow",
                 "summary": "Reads the subsequent items of all sales orders items.",
                 "description": "Reads the process flow data for all sales order items and their subsequent items in the system.",
                 "tags": [
@@ -6163,6 +6274,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderItmSubsqntProcFlowByKey",
                 "summary": "Reads a subsequent item for a sales order item.",
                 "description": "Reads the process flow data of a specific subsequent item of a specific sales order item. Consumers must pass the following key fields: sales order ID, sales order item ID, and document relationship UUID.",
                 "tags": [
@@ -6228,6 +6340,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderItmSubsqntProcFlow",
                 "summary": "Reads the sales order header data for a subsequent item of a sales order.",
                 "description": "Reads the sales order header data for a specific subsequent item of a sales order item. Consumers must pass the following key fields: sales order ID, sales order item number, and document relationship UUID.",
                 "tags": [
@@ -6294,6 +6407,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderItemOfA_SalesOrderItmSubsqntProcFlow",
                 "summary": "Reads the sales order item data for a subsequent item of a sales order.",
                 "description": "Reads the item data for a specific subsequent item of a sales order item. Consumers must pass the following key fields: sales order ID, sales order item number, and document relationship UUID.",
                 "tags": [
@@ -6327,6 +6441,7 @@
         },
         "/A_SalesOrderPartnerAddress": {
             "get": {
+                "operationId": "listA_SalesOrderPartnerAddress",
                 "summary": "Reads all addresses for header partners of sales orders.",
                 "description": "Reads the address data of all header partners of sales orders in the system.",
                 "tags": [
@@ -6423,6 +6538,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderPartnerAddressByKey",
                 "summary": "Reads the address of a header partner of a sales order.",
                 "description": "Reads the header address data of a specific header partner of a sales order. Consumers must pass the following key fields: sales order ID, partner function, and the address representation code.",
                 "tags": [
@@ -6453,6 +6569,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrderPartnerAddress",
                 "summary": "Updates the address of a header partner of a sales order.",
                 "description": "Updates the header address data of a specific header partner of a sales order. Consumers must pass the following key fields: sales order ID, partner function, and the address representation code.",
                 "tags": [
@@ -6513,6 +6630,7 @@
                 }
             ],
             "get": {
+                "operationId": "getPartnerOfA_SalesOrderPartnerAddress",
                 "summary": "Reads the sales order header partner for a header partner address.",
                 "description": "Reads the sales order header partner data for a specific header partner address. Consumers must pass the following key fields: sales order ID, partner function, and the address representation code.",
                 "tags": [
@@ -6578,6 +6696,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderPartnerAddress",
                 "summary": "Reads the sales order for a header partner address.",
                 "description": "Reads the sales order data for a specific partner address. Consumers must pass the following key fields: sales order ID and the address representation code.",
                 "tags": [
@@ -6611,6 +6730,7 @@
         },
         "/A_SalesOrderPrecdgProcFlow": {
             "get": {
+                "operationId": "listA_SalesOrderPrecdgProcFlow",
                 "summary": "Reads the preceding documents of all sales orders.",
                 "description": "Reads the process flow data for all sales orders and their preceding documents in the system.",
                 "tags": [
@@ -6698,6 +6818,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderPrecdgProcFlowByKey",
                 "summary": "Reads a preceding document for a sales order.",
                 "description": "Reads the process flow data of a specific preceding document of a specific sales order. Consumers must pass the following key fields: sales order ID and document relationship UUID.",
                 "tags": [
@@ -6753,6 +6874,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderPrecdgProcFlow",
                 "summary": "Reads the sales order header data for a preceding document of a sales order.",
                 "description": "Read the sales order header data for a preceding document of a specific sales order. Consumers must pass the following key fields: sales order ID and document relationship UUID.",
                 "tags": [
@@ -6786,6 +6908,7 @@
         },
         "/A_SalesOrderRelatedObject": {
             "get": {
+                "operationId": "listA_SalesOrderRelatedObject",
                 "summary": "Reads related objects from the headers of all sales orders.",
                 "description": "Reads the data for related objects from the headers of all sales orders in the system.",
                 "tags": [
@@ -6848,6 +6971,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SalesOrderRelatedObject",
                 "summary": "Creates a related object for a sales order header.",
                 "description": "Creates the data for a related object for the header of a specific sales order. Consumers must pass the following key fields: sales order ID, related object type, and related object reference 1.",
                 "tags": [
@@ -6905,6 +7029,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderRelatedObjectByKey",
                 "summary": "Reads a related object from the header of a specific sales order.",
                 "description": "Reads the data for a related object from the header of a specific sales order. Consumers must pass the following key fields: sales order ID and sequence number of the related object.",
                 "tags": [
@@ -6935,6 +7060,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SalesOrderRelatedObject",
                 "summary": "Deletes a related object from a sales order header.",
                 "description": "Deletes the data for a related object from the header of a specific sales order. Consumers must pass the following key fields: sales order ID and sequence number of the related object.",
                 "tags": [
@@ -6974,6 +7100,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderRelatedObject",
                 "summary": "Reads the sales order header for a related object.",
                 "description": "Reads the sales order header data for a specific related object. Consumers must pass the following key fields: sales order ID and sequence number.",
                 "tags": [
@@ -7007,6 +7134,7 @@
         },
         "/A_SalesOrderScheduleLine": {
             "get": {
+                "operationId": "listA_SalesOrderScheduleLine",
                 "summary": "Reads the schedule lines of all sales orders.",
                 "description": "Reads the schedule line data from the items of all sales orders in the system.",
                 "tags": [
@@ -7066,6 +7194,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SalesOrderScheduleLine",
                 "summary": "Creates a schedule line.",
                 "description": "Creates the schedule line data for a specific item of a specific sales order. Consumers must pass the following key fields: sales order ID, sales order item.",
                 "tags": [
@@ -7133,6 +7262,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderScheduleLineByKey",
                 "summary": "Reads a schedule line.",
                 "description": "Reads the schedule line data from a specific item of a specific sales order. Consumers must pass the following key fields: sales order ID, sales order item, and schedule line number.",
                 "tags": [
@@ -7160,6 +7290,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrderScheduleLine",
                 "summary": "Updates a schedule line.",
                 "description": "Updates the schedule line data from a specific item of a specific sales order. Consumers must pass the following key fields: sales order ID, sales order item, and schedule line number.",
                 "tags": [
@@ -7186,6 +7317,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SalesOrderScheduleLine",
                 "summary": "Deletes a schedule line.",
                 "description": "Deletes the schedule line data from a specific item of a specific sales order. Consumers must pass the following key fields: sales order ID, sales order item, and schedule line number.",
                 "tags": [
@@ -7203,6 +7335,7 @@
         },
         "/A_SalesOrderSubsqntProcFlow": {
             "get": {
+                "operationId": "listA_SalesOrderSubsqntProcFlow",
                 "summary": "Reads the subsequent documents of all sales orders.",
                 "description": "Reads the process flow data for all sales orders and their subsequent documents in the system.",
                 "tags": [
@@ -7290,6 +7423,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderSubsqntProcFlowByKey",
                 "summary": "Reads a subsequent document of a sales order.",
                 "description": "Reads the process flow data of a specific subsequent document of a specific sales order. Consumers must pass the following key fields: sales order ID and document relationship UUID.",
                 "tags": [
@@ -7345,6 +7479,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderSubsqntProcFlow",
                 "summary": "Reads the sales order header data for a subsequent document of a sales order.",
                 "description": "Read the sales order header data for a subsequent document of a specific sales order. Consumers must pass the following key fields: sales order ID and document relationship UUID.",
                 "tags": [
@@ -7378,6 +7513,7 @@
         },
         "/A_SalesOrderText": {
             "get": {
+                "operationId": "listA_SalesOrderText",
                 "summary": "Reads the header texts of all sales orders.",
                 "description": "Reads the text data from the headers of all sales orders in the system.",
                 "tags": [
@@ -7440,6 +7576,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SalesOrderText",
                 "summary": "Creates a header text for a sales order.",
                 "description": "Creates specific text data for the header of a specific sales order. Consumers must pass the following key fields: sales order ID, language, and text ID.",
                 "tags": [
@@ -7507,6 +7644,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SalesOrderTextByKey",
                 "summary": "Reads a header text from a sales order.",
                 "description": "Reads the text data from the header of a specific sales order. Consumers must pass the following key fields: sales order ID, language, and text ID.",
                 "tags": [
@@ -7537,6 +7675,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SalesOrderText",
                 "summary": "Updates a header text for a sales order.",
                 "description": "Updates specific text data from the header of a specific sales order. Consumers must pass the following key fields: sales order ID, language, and text ID.",
                 "tags": [
@@ -7563,6 +7702,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SalesOrderText",
                 "summary": "Deletes a header text from a sales order.",
                 "description": "Deletes specific text data from the header of a specific sales order. Consumers must pass the following key fields: sales order ID, language, and text ID.",
                 "tags": [
@@ -7612,6 +7752,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SalesOrderText",
                 "summary": "Reads the sales order header for a header text.",
                 "description": "Reads the sales order header data for a specific header text. Consumers must pass the following key fields: sales order ID, language, and text ID.",
                 "tags": [
@@ -7645,6 +7786,7 @@
         },
         "/A_SlsOrderItemBillingPlanItem": {
             "get": {
+                "operationId": "listA_SlsOrderItemBillingPlanItem",
                 "summary": "Reads the billing plan items of all sales order items.",
                 "description": "Reads the billing plan item data from the items of all sales orders in the system.",
                 "tags": [
@@ -7707,6 +7849,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SlsOrderItemBillingPlanItem",
                 "summary": "Creates a billing plan item for a sales order item.",
                 "description": "Creates a billing plan item of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, number of the item billing plan, and item number of the item billing plan.",
                 "tags": [
@@ -7784,6 +7927,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SlsOrderItemBillingPlanItemByKey",
                 "summary": "Reads a billing plan item of a sales order item.",
                 "description": "Reads a specific billing plan item of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, number of the item billing plan, and item number of the item billing plan.",
                 "tags": [
@@ -7814,6 +7958,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SlsOrderItemBillingPlanItem",
                 "summary": "Updates a billing plan item of a sales order item.",
                 "description": "Updates a specific billing plan item of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, number of the item billing plan, and item number of the item billing plan.",
                 "tags": [
@@ -7840,6 +7985,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SlsOrderItemBillingPlanItem",
                 "summary": "Deletes a billing plan item of a sales order item.",
                 "description": "Deletes a specific billing plan item of a specific sales order item. Consumers must pass the following key fields: sales order ID, item number, number of the item billing plan, and item number of the item billing plan.",
                 "tags": [
@@ -7899,6 +8045,7 @@
                 }
             ],
             "get": {
+                "operationId": "getBillingPlanOfA_SlsOrderItemBillingPlanItem",
                 "summary": "Reads the item billing plan for an item billing plan item.",
                 "description": "Reads the item billing plan data for a specific billing plan item of a sales order item. Consumers must pass the following key fields: sales order ID, item number, number of the item billing plan, and item number of the item billing plan.",
                 "tags": [
@@ -7974,6 +8121,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SlsOrderItemBillingPlanItem",
                 "summary": "Reads the sales order header for an item billing plan item.",
                 "description": "Reads the sales order header data for a specific billing plan item of a sales order item. Consumers must pass the following key fields: sales order ID, item number, number of the item billing plan, and item number of the item billing plan.",
                 "tags": [
@@ -8049,6 +8197,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderItemOfA_SlsOrderItemBillingPlanItem",
                 "summary": "Reads the sales order item for a billing plan item of this sales order item.",
                 "description": "Reads the sales order item data for a specific billing plan item of this sales order item. Consumers must pass the following key fields: sales order ID, item number, number of the item billing plan, and item number of the item billing plan.",
                 "tags": [
@@ -8082,6 +8231,7 @@
         },
         "/A_SlsOrdPaymentPlanItemDetails": {
             "get": {
+                "operationId": "listA_SlsOrdPaymentPlanItemDetails",
                 "summary": "Reads the payment plans of all sales orders.",
                 "description": "Reads the payment plan data from the header of all sales orders in the system.",
                 "tags": [
@@ -8144,6 +8294,7 @@
                 }
             },
             "post": {
+                "operationId": "createA_SlsOrdPaymentPlanItemDetails",
                 "summary": "Creates a payment plan for a sales order.",
                 "description": "Creates the payment plan data for the header of a specific sales order.",
                 "tags": [
@@ -8201,6 +8352,7 @@
                 }
             ],
             "get": {
+                "operationId": "getA_SlsOrdPaymentPlanItemDetailsByKey",
                 "summary": "Reads a payment plan item of a sales order.",
                 "description": "Reads the payment plan data from the header of a specific sales order.",
                 "tags": [
@@ -8231,6 +8383,7 @@
                 }
             },
             "patch": {
+                "operationId": "patchA_SlsOrdPaymentPlanItemDetails",
                 "summary": "Updates a payment plan item of a sales order.",
                 "description": "Updates the payment plan data of the header of a specific sales order.",
                 "tags": [
@@ -8257,6 +8410,7 @@
                 }
             },
             "delete": {
+                "operationId": "deleteA_SlsOrdPaymentPlanItemDetails",
                 "summary": "Deletes a payment plan item of a specific sales order.",
                 "description": "Deletes the payment plan data from the header of a specific sales order.",
                 "tags": [
@@ -8296,6 +8450,7 @@
                 }
             ],
             "get": {
+                "operationId": "getSalesOrderOfA_SlsOrdPaymentPlanItemDetails",
                 "summary": "Reads the sales order header for a payment plan item.",
                 "description": "Reads the sales order header data for a specific payment plan item. Consumers must pass the following key fields: sales order ID and payment plan item ID.",
                 "tags": [
@@ -8329,6 +8484,7 @@
         },
         "/rejectApprovalRequest": {
             "post": {
+                "operationId": "rejectApprovalRequest",
                 "summary": "Invoke action rejectApprovalRequest",
                 "tags": [
                     "Service Operations"
@@ -8368,6 +8524,7 @@
         },
         "/releaseApprovalRequest": {
             "post": {
+                "operationId": "releaseApprovalRequest",
                 "summary": "Invoke action releaseApprovalRequest",
                 "tags": [
                     "Service Operations"
@@ -8407,6 +8564,7 @@
         },
         "/$batch": {
             "post": {
+                "operationId": "performBatchOperation",
                 "summary": "Send a group of requests",
                 "description": "Group multiple requests into a single request payload, see [Batch Requests](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html#sec_BatchRequests).\n\n*Please note that \"Try it out\" is not supported for this request.*",
                 "tags": [
