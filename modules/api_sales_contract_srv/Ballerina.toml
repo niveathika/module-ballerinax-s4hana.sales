@@ -1,0 +1,14 @@
+[package]
+org = "ballerinax"
+name = "s4hana.api_sales_contract_srv"
+version = "0.1.0"
+distribution = "2201.8.4"
+
+[build-options]
+observabilityIncluded = true
+
+[[dependency]]
+org = "ballerinax"
+name = "sap"
+version="0.1.0"
+repository="local"
