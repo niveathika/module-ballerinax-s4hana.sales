@@ -99,6 +99,7 @@
   "paths": {
     "/A_SalesContract": {
       "get": {
+        "operationId": "listA_SalesContract",
         "summary": "Reads all sales contract headers.",
         "description": "Reads the header data of all sales contracts in the system.",
         "tags": [
@@ -161,6 +162,7 @@
         }
       },
       "post": {
+        "operationId": "createA_SalesContract",
         "summary": "Creates a sales contract.",
         "description": "Creates a header of a sales contract. The consumer can use deep insert requests. This means the consumer can include the following entities in the payload:header partner, header pricing element, header text, sales contract item, item partner, item pricing element, and item text.",
         "tags": [
@@ -208,6 +210,7 @@
         }
       ],
       "get": {
+        "operationId": "getA_SalesContractByKey",
         "summary": "Reads the header of a specific sales contract.",
         "description": "Reads the header data of a specific sales contract, which the consumer specifies by passing the sales contract number.",
         "tags": [
@@ -238,6 +241,7 @@
         }
       },
       "patch": {
+        "operationId": "patchA_SalesContract",
         "summary": "Updates the header of a specific sales contract.",
         "description": "Updates the header data of a specific sales contract, which the consumer specifies by passing the sales contract number.",
         "tags": [
@@ -264,6 +268,7 @@
         }
       },
       "delete": {
+        "operationId": "deleteA_SalesContract",
         "summary": "Deletes a specific sales contract.",
         "description": "Deletes a specific sales contract, which the consumer specifies by passing the sales contract number.",
         "tags": [
@@ -293,6 +298,7 @@
         }
       ],
       "get": {
+        "operationId": "getItemOfA_SalesContract",
         "summary": "Reads items of a specific sales contract.",
         "description": "Reads item data from the header of a specific sales contract, which the consumer specifies by passing the sales contract number.",
         "tags": [
@@ -356,6 +362,7 @@
         }
       },
       "post": {
+        "operationId": "createItemOfA_SalesContract",
         "summary": "Creates one or more items for a specific sales contract.",
         "description": "Creates item data for a specific sales contract, which the consumer specifies by passing the sales contract number. The consumer must also pass the sales contract number in the payload.",
         "tags": [
@@ -404,6 +411,7 @@
         }
       ],
       "get": {
+        "operationId": "getPartnerOfA_SalesContract",
         "summary": "Reads the header-level partners of a specific sales contract.",
         "description": "Reads partner data from the header of a specific sales contract, which the consumer specifies by passing the sales contract number.",
         "tags": [
@@ -467,6 +475,7 @@
         }
       },
       "post": {
+        "operationId": "createPartnerOfA_SalesContract",
         "summary": "Creates the header partners of a specific sales contract.",
         "description": "Creates the partner data from the header of a specific sales contract. Consumers must pass the following key fields: sales contract ID and partner function.The data is relevant for all items for which no item-specific partners are maintained.",
         "tags": [
@@ -515,6 +524,7 @@
         }
       ],
       "get": {
+        "operationId": "getPricingElementOfA_SalesContract",
         "summary": "Reads the header-level pricing elements of a specific sales contract.",
         "description": "Reads pricing element data from the header of a specific sales contract, which the consumer specifies by passing the sales contract number.",
         "tags": [
@@ -592,6 +602,7 @@
         }
       ],
       "get": {
+        "operationId": "getTextOfA_SalesContract",
         "summary": "Reads the header-level texts of a specific sales contract.",
         "description": "Reads text data from the header of a specific sales contract, which the consumer specifies by passing the sales contract number.",
         "tags": [
@@ -657,6 +668,7 @@
     },
     "/A_SalesContractItem": {
       "get": {
+        "operationId": "listA_SalesContractItem",
         "summary": "Reads all sales contract items.",
         "description": "Reads all item data of all sales contracts in the system.",
         "tags": [
@@ -719,6 +731,7 @@
         }
       },
       "post": {
+        "operationId": "createA_SalesContractItem",
         "summary": "Creates one or more sales contract items for a specific sales contract.",
         "description": "Creates sales contract item data for a specific sales contract, which the consumer must specify in the payload. The consumer can use deep insert requests.This means the consumer can include following entities in the payload: item partner and item pricing element.",
         "tags": [
@@ -776,6 +789,7 @@
         }
       ],
       "get": {
+        "operationId": "getA_SalesContractItemByKey",
         "summary": "Reads a specific sales contract item.",
         "description": "Reads the data of a specific sales contract item, which the consumer specifies by passing the sales contract number and item number.",
         "tags": [
@@ -806,6 +820,7 @@
         }
       },
       "patch": {
+        "operationId": "patchA_SalesContractItem",
         "summary": "Updates a specific sales contract item.",
         "description": "Updates the data of a specific sales contract item, which the consumer specifies by passing the sales contract number and item number.",
         "tags": [
@@ -832,6 +847,7 @@
         }
       },
       "delete": {
+        "operationId": "deleteA_SalesContractItem",
         "summary": "Deletes a specific sales contract item.",
         "description": "Deletes the data of a specific sales contract item, which the consumer specifies by passing the sales contract number and item number.",
         "tags": [
@@ -871,6 +887,7 @@
         }
       ],
       "get": {
+        "operationId": "getPartnerOfA_SalesContractItem",
         "summary": "Reads the item-level partner of a specific sales contract item.",
         "description": "Reads the partner data from a specific sales contract item, which the consumer specifies by passing the sales contract number and item number.",
         "tags": [
@@ -958,6 +975,7 @@
         }
       ],
       "get": {
+        "operationId": "getPricingElementOfA_SalesContractItem",
         "summary": "Reads the item-level pricing element of a specific sales contract item.",
         "description": "Reads the pricing element data from a specific sales contract item, which the consumer specifies by passing the sales contract number and item number.",
         "tags": [
@@ -1045,6 +1063,7 @@
         }
       ],
       "get": {
+        "operationId": "getSalesContractOfA_SalesContractItem",
         "summary": "Reads the sales contract header for a specific sales contract item.",
         "description": "Reads sales contract header fields for a specific item. Consumers must pass the following key fields: sales contract number and item number.",
         "tags": [
@@ -1100,6 +1119,7 @@
         }
       ],
       "get": {
+        "operationId": "getTextOfA_SalesContractItem",
         "summary": "Reads the item-level text of a specific sales contract item.",
         "description": "Reads the text data from a specific sales contract item, which the consumer specifies by passing the sales contract number and item number.",
         "tags": [
@@ -1165,6 +1185,7 @@
     },
     "/A_SalesContractItemPartner": {
       "get": {
+        "operationId": "listA_SalesContractItemPartner",
         "summary": "Reads all item-level partners.",
         "description": "Reads partner data from all sales contract items in the system. This includes fields such as partner function, customer, contact person, and more.",
         "tags": [
@@ -1262,6 +1283,7 @@
         }
       ],
       "get": {
+        "operationId": "getA_SalesContractItemPartnerByKey",
         "summary": "Reads a specific item-level partner.",
         "description": "Reads a specific item-level partner, which the consumer specifies by passing the sales contract number, item number, and partner function.",
         "tags": [
@@ -1292,6 +1314,7 @@
         }
       },
       "patch": {
+        "operationId": "patchA_SalesContractItemPartner",
         "summary": "Updates a specific item-level partner.",
         "description": "Updates a specific item-level partner, which the consumer specifies by passing the sales contract number, item number, and partner function.",
         "tags": [
@@ -1318,6 +1341,7 @@
         }
       },
       "delete": {
+        "operationId": "deleteA_SalesContractItemPartner",
         "summary": "Deletes a specific item-level partner.",
         "description": "Deletes a specific item-level partner, which the consumer specifies by passing the sales contract number, item number, and partner function.",
         "tags": [
@@ -1368,6 +1392,7 @@
         }
       ],
       "get": {
+        "operationId": "getSalesContractOfA_SalesContractItemPartner",
         "summary": "Reads the sales contract header for a specific item partner.",
         "description": "Reads sales contract header fields for a specific item-level partner function. Consumers must pass the following key fields: sales contract, item number, and item partner function.",
         "tags": [
@@ -1434,6 +1459,7 @@
         }
       ],
       "get": {
+        "operationId": "getSalesContractItemOfA_SalesContractItemPartner",
         "summary": "Reads the sales contract item for a specific item partner.",
         "description": "Reads fields of a sales contract item for a specific item-level partner function. Consumers must pass the following key fields: sales contract number, item number, and item partner function.",
         "tags": [
@@ -1467,6 +1493,7 @@
     },
     "/A_SalesContractItemPrcgElmnt": {
       "get": {
+        "operationId": "listA_SalesContractItemPrcgElmnt",
         "summary": "Reads all item-level pricing elements.",
         "description": "Reads pricing element data from the all sales contracts items in the system. This includes fields such as pricing procedure counter, pricing procedure step, and more.",
         "tags": [
@@ -1573,6 +1600,7 @@
         }
       ],
       "get": {
+        "operationId": "getA_SalesContractItemPrcgElmntByKey",
         "summary": "Reads a specific item-level pricing element.",
         "description": "Reads a specific item-level pricing element, which the consumer specifies by passing the sales contract number, item number, pricing procedure step, and pricing procedure counter.",
         "tags": [
@@ -1603,6 +1631,7 @@
         }
       },
       "patch": {
+        "operationId": "patchA_SalesContractItemPrcgElmnt",
         "summary": "Updates a specific item-level partner.",
         "description": "Updates a specific item-level partner, which the consumer specifies by passing the sales contract number, item number, and partner function.",
         "tags": [
@@ -1629,6 +1658,7 @@
         }
       },
       "delete": {
+        "operationId": "deleteA_SalesContractItemPrcgElmnt",
         "summary": "Updates a specific item-level pricing element.",
         "description": "Updates a specific header-level pricing element, which the consumer specifies by passing the sales contract number, item number, pricing procedure step, and pricing procedure counter.",
         "tags": [
@@ -1688,6 +1718,7 @@
         }
       ],
       "get": {
+        "operationId": "getSalesContractOfA_SalesContractItemPrcgElmnt",
         "summary": "Reads the sales contract header for a specific item pricing element.",
         "description": "Reads sales contract header fields for a specific item-level pricing element. Consumers must pass the following key fields: sales contract number, item number, item pricing procedure step,and item pricing procedure counter.",
         "tags": [
@@ -1763,6 +1794,7 @@
         }
       ],
       "get": {
+        "operationId": "getSalesContractItemOfA_SalesContractItemPrcgElmnt",
         "summary": "Reads the sales contract item for a specific item pricing element.",
         "description": "Reads fields of a sales contract item for a specific item-level pricing element. Consumers must pass the following key fields: sales contract number, item number, pricing procedure step,and pricing procedure counter.",
         "tags": [
@@ -1796,6 +1828,7 @@
     },
     "/A_SalesContractItemText": {
       "get": {
+        "operationId": "listA_SalesContractItemText",
         "summary": "Reads all item-level texts.",
         "description": "Reads text data from all sales contract items in the system. This includes fields such as language code, long text ID, and more.",
         "tags": [
@@ -1902,6 +1935,7 @@
         }
       ],
       "get": {
+        "operationId": "getA_SalesContractItemTextByKey",
         "summary": "Reads a specific item-level text.",
         "description": "Reads a specific item-level text, which the consumer specifies by passing the sales contract number, item number, language code, and long text ID.",
         "tags": [
@@ -1932,6 +1966,7 @@
         }
       },
       "patch": {
+        "operationId": "patchA_SalesContractItemText",
         "summary": "Updates a specific item-level text.",
         "description": "Updates a specific item-level text, which the consumer specifies by passing the sales contract number, item number, language code, and long text ID.",
         "tags": [
@@ -1958,6 +1993,7 @@
         }
       },
       "delete": {
+        "operationId": "deleteA_SalesContractItemText",
         "summary": "Deletes a specific item-level text.",
         "description": "Deletes a specific item-level text, which the consumer specifies by passing the sales contract number, item number, language code, and long text ID.",
         "tags": [
@@ -2017,6 +2053,7 @@
         }
       ],
       "get": {
+        "operationId": "getSalesContractOfA_SalesContractItemText",
         "summary": "Reads the sales contract header for a specific item text.",
         "description": "Reads sales contract header fields for a specific item-level text. Consumers must pass the following key fields: sales contract number, item number, item language code, and item long text ID.",
         "tags": [
@@ -2092,6 +2129,7 @@
         }
       ],
       "get": {
+        "operationId": "getSalesContractItemOfA_SalesContractItemText",
         "summary": "Reads the sales contract item for a specific item text.",
         "description": "Reads fields of a sales contract item for a specific item-level text. Consumers must pass the following key fields: sales contract number, item number, language code, and long text ID.",
         "tags": [
@@ -2125,6 +2163,7 @@
     },
     "/A_SalesContractPartner": {
       "get": {
+        "operationId": "listA_SalesContractPartner",
         "summary": "Reads all header-level partners.",
         "description": "Reads partner data from the headers of all sales contracts in the system. This includes fields such as partner function, customer, contact person, and more.",
         "tags": [
@@ -2212,6 +2251,7 @@
         }
       ],
       "get": {
+        "operationId": "getA_SalesContractPartnerByKey",
         "summary": "Reads a specific header-level partner.",
         "description": "Reads a specific header-level partner, which the consumer specifies by passing the sales contract number and partner function.",
         "tags": [
@@ -2242,6 +2282,7 @@
         }
       },
       "patch": {
+        "operationId": "patchA_SalesContractPartner",
         "summary": "Updates a specific header-level partner.",
         "description": "Updates a specific header-level partner, which the consumer specifies by passing the sales contract number and partner function.",
         "tags": [
@@ -2268,6 +2309,7 @@
         }
       },
       "delete": {
+        "operationId": "deleteA_SalesContractPartner",
         "summary": "Deletes a specific header-level partner.",
         "description": "Deletes a specific header-level partner, which the consumer specifies by passing the sales contract number and partner function.",
         "tags": [
@@ -2308,6 +2350,7 @@
         }
       ],
       "get": {
+        "operationId": "getSalesContractOfA_SalesContractPartner",
         "summary": "Reads the sales contract header for a specific header partner.",
         "description": "Reads sales contract header fields for a specific header-level partner function. Consumers must pass the following key fields: sales contract and partner function.",
         "tags": [
@@ -2341,6 +2384,7 @@
     },
     "/A_SalesContractPrcgElmnt": {
       "get": {
+        "operationId": "listA_SalesContractPrcgElmnt",
         "summary": "Reads all header-level pricing elements.",
         "description": "Reads pricing element data from the headers of all sales contracts in the system. This includes fields such as pricing procedure counter, pricing procedure step, and more.",
         "tags": [
@@ -2437,6 +2481,7 @@
         }
       ],
       "get": {
+        "operationId": "getA_SalesContractPrcgElmntByKey",
         "summary": "Reads a specific header-level pricing element.",
         "description": "Reads a specific header-level pricing element, which the consumer specifies by passing the sales contract number, pricing procedure step, and pricing procedure counter.",
         "tags": [
@@ -2467,6 +2512,7 @@
         }
       },
       "patch": {
+        "operationId": "patchA_SalesContractPrcgElmnt",
         "summary": "Updates a specific header-level pricing element.",
         "description": "Updates a specific header-level pricing element, which the consumer specifies by passing the sales contract number, pricing procedure step, and pricing procedure counter.",
         "tags": [
@@ -2493,6 +2539,7 @@
         }
       },
       "delete": {
+        "operationId": "deleteA_SalesContractPrcgElmnt",
         "summary": "Deletes a specific header-level pricing element.",
         "description": "Deletes a specific header-level pricing element, which the consumer specifies by passing the sales contract number, pricing procedure step, and pricing procedure counter.",
         "tags": [
@@ -2542,6 +2589,7 @@
         }
       ],
       "get": {
+        "operationId": "getSalesContractOfA_SalesContractPrcgElmnt",
         "summary": "Reads the sales contract header for a specific header pricing element.",
         "description": "Reads sales contract header fields for a specific header-level pricing element. Consumers must pass the following key fields: sales contract number, pricing procedure step, and pricing procedure counter.",
         "tags": [
@@ -2575,6 +2623,7 @@
     },
     "/A_SalesContractText": {
       "get": {
+        "operationId": "listA_SalesContractText",
         "summary": "Reads all header-level texts.",
         "description": "Reads text data from the headers of all sales contracts in the system. This includes fields such as language code, long text ID, and more.",
         "tags": [
@@ -2671,6 +2720,7 @@
         }
       ],
       "get": {
+        "operationId": "getA_SalesContractTextByKey",
         "summary": "Reads a specific header-level text.",
         "description": "Reads a specific header-level text, which the consumer specifies by passing the sales contract number, language code, and long text ID.",
         "tags": [
@@ -2701,6 +2751,7 @@
         }
       },
       "patch": {
+        "operationId": "patchA_SalesContractText",
         "summary": "Updates a specific header-level text.",
         "description": "Updates a specific header-level text, which the consumer specifies by passing the sales contract number, language code, and long text ID.",
         "tags": [
@@ -2727,6 +2778,7 @@
         }
       },
       "delete": {
+        "operationId": "deleteA_SalesContractText",
         "summary": "Deletes a specific header-level text.",
         "description": "Deletes a specific header-level text, which the consumer specifies by passing the sales contract number, language code, and long text ID.",
         "tags": [
@@ -2776,6 +2828,7 @@
         }
       ],
       "get": {
+        "operationId": "getSalesContractOfA_SalesContractText",
         "summary": "Reads the sales contract header for a specific header text.",
         "description": "Reads sales contract header fields for a specific header-level text. Consumers must pass the following key fields: sales contract number, language code, and long text ID.",
         "tags": [
@@ -2809,6 +2862,7 @@
     },
     "/releaseApprovalRequest": {
       "post": {
+        "operationId": "releaseApprovalRequest",
         "summary": "Approves a specific sales contract.",
         "description": "Releases the approval request for a specific sales contract. Consumer must pass the sales contract number.",
         "tags": [
@@ -2849,6 +2903,7 @@
     },
     "/rejectApprovalRequest": {
       "post": {
+        "operationId": "rejectApprovalRequest",
         "summary": "Rejects a specific sales contract.",
         "description": "Rejects the approval request for a specific sales contract. Consumer must pass the sales contractnumber.",
         "tags": [
@@ -2889,6 +2944,7 @@
     },
     "/$batch": {
       "post": {
+        "operationId": "performBatchOperation",
         "summary": "Send a group of requests",
         "description": "Group multiple requests into a single request payload, see [Batch Requests](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html#sec_BatchRequests).\n\n*Please note that \"Try it out\" is not supported for this request.*",
         "tags": [
